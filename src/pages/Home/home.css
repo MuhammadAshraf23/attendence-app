@@ -1,0 +1,101 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav {
+    background-color: dodgerblue;
+    overflow: hidden;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+  
+  nav li {
+    float: right;
+  }
+  
+  nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  nav li a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  /* Add this to highlight the active link */
+  nav li a.active {
+    background-color: #4CAF50;
+    color: white;
+  }
+  
+  /* Add this to style the content area */
+  Routes {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #f0f0f0;
+  }
+
+  .heading {
+    text-align: center;
+    margin-top: 50px;
+  }
+  
+  .heading h1 {
+    font-size: 48px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; /* Replace with your preferred font */
+    color: dodgerblue;
+    text-decoration: underline;
+  }
+
+  .para1{
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+  }
+
+.para2{
+    font-size: 20px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    background-color: yellowgreen;
+
+    color: white;
+}
+
+.para3{
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    background-color: dodgerblue;
+    color: black;
+}
+
+.getStarted{
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: yellowgreen;
+    height: 50px;width: 400px;
+    color: white;
+  text-align: center;
+  align-items: center;
+    margin: 20px auto;
+}
+
+.link{
+    text-decoration: none;
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    font-weight: bold;
+}

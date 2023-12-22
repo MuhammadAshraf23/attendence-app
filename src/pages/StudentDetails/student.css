@@ -1,0 +1,98 @@
+.students {
+    display: flex;
+    flex-direction: row;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(136, 112, 112, 0.1);
+    height: 600px;
+  }
+  
+  .slide {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    background-color: #ffffff;
+    width: 30%;
+    margin:0 4px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    padding-top: 40px;
+  }
+  
+  .slide img {
+    max-width: 150px;
+    max-height: 150px;
+  
+  }
+  .slide-img{
+    text-align: center;
+    margin:8px;
+  }
+  .slide button {
+    padding: 10px;
+    margin: 5px 0px;
+    cursor: pointer;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  .details {
+    width: 60%;
+    background-color: #f2f2f2;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+  
+  .header h1 {
+    font-size: 24px;
+    color: #333;
+    padding-top: 5px;
+    padding-left: 10px;
+    font-weight: bold;
+  }
+  
+  .header button {
+    padding: 10px;
+    cursor: pointer;
+    background-color: #27ae60;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+  }
+  .add-student-icon{
+    font-size: 20px;
+    color: white;
+    padding:0 4px;
+  }
+  .student-description table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .student-description th, .student-description td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+  }
+  
+  .student-description th {
+    background-color: #f2f2f2;
+  }
+  
+  .student-description img {
+    max-width: 50px;
+    max-height: 50px;
+  }
+  tr th {
+    background-color: #3498db !important;
+    color: #fff;
+  }
+  
