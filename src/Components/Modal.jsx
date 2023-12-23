@@ -56,7 +56,7 @@ const BasicModal = ({ open, onClose, onModalData }) => {
       formDataObject.append("student-photo", image);
 
       const response = await axios.post(
-        "http://localhost:8005/students/add-student",
+        "https://attendance-app.adaptable.app/students/add-student",
         formDataObject
       );
 

@@ -25,7 +25,7 @@ const StudentDetail = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.get('http://localhost:8005/students/get-students');
+        const response = await axios.get('https://attendance-app.adaptable.app/students/get-students');
         console.log(response.data)
         setStudentsData(response.data);
       } catch (error) {
@@ -38,7 +38,7 @@ const StudentDetail = () => {
   useEffect(() => {
     const fetchDataOfAttendance = async (id) => {
       try {
-        const response = await axios.get(`http://localhost:8005/students/update-user-data/${id}`);
+        const response = await axios.get(`https://attendance-app.adaptable.app/students/update-user-data/${id}`);
         console.log("Attendd",response.data)
         setShowAttendance(response.data);
       } catch (error) {
@@ -84,7 +84,7 @@ const StudentDetail = () => {
            return(
               <tr key={index}>
                 <td>{index+1}</td>
-                <td><img src={`http://localhost:8005/${student.imageUrl}`} alt="Profile" /></td>
+                <td><img src={`https://attendance-app.adaptable.app/${student.imageUrl}`} alt="Profile" /></td>
                 <td>{student.firstName} {student.lastName}</td>
                 <td>{showAttendance ? student.checkInTime : student.courseName}</td>
                 <td>{showAttendance ? student.checkOutTime : student.password}</td>

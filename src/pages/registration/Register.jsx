@@ -12,7 +12,7 @@ const Register = () => {
 
     const handleSubmit = (event) => {
         event.preventDefault();
-        axios.post( 'http://localhost:8005/register', {name, email, password})
+        axios.post( 'https://attendance-app.adaptable.app/register', {name, email, password})
         .then(result => {
           //  console.log("Result__>",result);
             if(result.data === "Already registered"){

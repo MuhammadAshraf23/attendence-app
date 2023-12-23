@@ -20,7 +20,7 @@ const User = () => {
     const checkInTime = new Date().toLocaleTimeString();
     try {
       await axios.post(
-        `http://localhost:8005/students/update-user-data/${id}`,
+        `https://attendance-app.adaptable.app/students/update-user-data/${id}`,
         {
           checkInTime,
         }
@@ -38,7 +38,7 @@ const User = () => {
     const checkOutTime = new Date().toLocaleTimeString();
     try {
       await axios.post(
-        `http://localhost:8005/students/update-user-data/${id}`,
+        `https://attendance-app.adaptable.app/update-user-data/${id}`,
         {
           checkOutTime,
         }
@@ -65,7 +65,7 @@ const User = () => {
     console.log("studentid--->", id);
     try {
       const response = await axios.get(
-        `http://localhost:8005/students/get-single-student/${id}`
+        `https://attendance-app.adaptable.app/students/get-single-student/${id}`
       );
       console.log("res--->", response.data);
       setUserData(response.data);
@@ -91,7 +91,7 @@ const User = () => {
           {userData.firstName} {userData.lastName}
         </h1>
         <img
-          src={`http://localhost:8005/${userData.imageUrl}`}
+          src={`https://attendance-app.adaptable.app/${userData.imageUrl}`}
           alt="User Avatar"
         />
       </div>
